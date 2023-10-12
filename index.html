@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Access Modal</title>
+    <!-- Include Bootstrap CSS (you may need to adjust the path) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Font Awesome CSS (you may need to adjust the path) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <style>  
+        .icon-with-shadow  {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .icon-with-shadow:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    </style>
+</head>
+<body>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        View Quick Access
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quick Access</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row text-center">
+                        <div class="col">
+                            <div class="icon-container">
+                                <i class="material-icons icon-with-shadow tooltipped" data-position="top" data-tooltip="Global Market Size" style="color: #FF5733;">business</i>
+                                <span>Global Market Size</span>
+                                <div class="tooltip-arrow"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="icon-container">
+                                <i class="material-icons icon-with-shadow tooltipped" data-position="top" data-tooltip="Features List" style="color: #FFC300;">list</i>
+                                <span>Features List</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="icon-container">
+                                <i class="material-icons icon-with-shadow tooltipped" data-position="top" data-tooltip="Graphs" style="color: #FF5733;">show_chart</i>
+                                <span>Graphs</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="icon-container">
+                                <i class="material-icons icon-with-shadow tooltipped" data-position="top" data-tooltip="MVP Patterns" style="color: #FFC300;">trending_up</i>
+                                <span>MVP Patterns</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="icon-container">
+                                <i class="material-icons icon-with-shadow tooltipped" data-position="top" data-tooltip="System Design" style="color: #FF5733;">device_hub</i>
+                                <span>System Design</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="icon-container">
+                                <i class="material-icons icon-with-shadow tooltipped" data-position="top" data-tooltip="Technology Fitment" style="color: #FFC300;">devices_other</i>
+                                <span>Technology Fitment</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="icon-container">
+                                <i class="material-icons icon-with-shadow tooltipped" data-position="top" data-tooltip="Solution Document" style="color: #FF5733;">description</i>
+                                <span>Solution Document</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="icon-container">
+                                <i class="material-icons icon-with-shadow tooltipped" data-position="top" data-tooltip="Project Plan" style="color: #FFC300;">insert_chart</i>
+                                <span>Project Plan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        M.AutoInit(); // Initialize Materialize components, including tooltips
+    </script>
+    <!-- Include Bootstrap JavaScript (you may need to adjust the path) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
